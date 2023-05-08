@@ -2,7 +2,6 @@ public class Carrera{
     private String nombreCircuito;
     private int numeroCoches;
     private boolean lluvia;
-    private String resultado;
     
     public Carrera(String nomCir, int numCo){
         nombreCircuito = nomCir;
@@ -44,7 +43,7 @@ public class Carrera{
     }
     
     public String getDetalles(){
-        resultado= "";
+        String resultado = "";
         if(lluvia = false){
             resultado = "Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: no";
         }
