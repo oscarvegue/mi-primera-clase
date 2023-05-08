@@ -1,9 +1,10 @@
-public class carrera{
+public class Carrera{
     private String nombreCircuito;
     private int numeroCoches;
     private boolean lluvia;
+    private String resultado;
     
-    public carrera(String nomCir, int numCo){
+    public Carrera(String nomCir, int numCo){
         nombreCircuito = nomCir;
         numeroCoches = numCo;
         lluvia = false;
@@ -35,7 +36,7 @@ public class carrera{
     
     public void imprimirDetalles(){
         if(lluvia = false){
-        System.out.println("Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: no");
+            System.out.println("Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: no");
         }
         else{
             System.out.println("Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: si");
@@ -43,11 +44,13 @@ public class carrera{
     }
     
     public String getDetalles(){
+        resultado= "";
         if(lluvia = false){
-        return "Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: no";
+            resultado = "Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: no";
         }
         else{
-            return "Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: si";
+            resultado = "Nombre del circuito: " + nombreCircuito + "| Numero de coches: " + numeroCoches + "| Luvia: si";
         }
+        return resultado;
     }
 }

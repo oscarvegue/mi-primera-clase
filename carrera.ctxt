@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=carrera
+comment0.target=Carrera
 comment1.params=nomCir\ numCo
-comment1.target=carrera(java.lang.String,\ int)
+comment1.target=Carrera(java.lang.String,\ int)
 comment2.params=
 comment2.target=java.lang.String\ getNombreCircuito()
 comment3.params=
